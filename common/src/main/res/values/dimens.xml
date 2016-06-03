@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="titleBarHeight">45dp</dimen>
+    <dimen name="titleTextSize">18dp</dimen>
+    <dimen name="titleLeftSize">16dp</dimen>
+    <dimen name="title2TextSize">13dp</dimen>
+
+    <dimen name="key_height">50.0dip</dimen>
+</resources>

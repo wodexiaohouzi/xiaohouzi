@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <com.juxin.common.widget.MyTitleBar
+        android:id="@+id/myTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="小侯子.txt"
+        android:textColor="@color/dark_gray"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="类型：\t文档"
+        android:textColor="@color/light_gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="版本：\t1.0"
+        android:textColor="@color/light_gray"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="大小：\t0.0B"
+        android:textColor="@color/light_gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="时间：\t2016-05-09 16:41:09"
+        android:textColor="@color/light_gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="目录：\t手机SD卡"
+        android:textColor="@color/light_gray"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tvReName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="重命名"
+        android:textColor="@color/dark_gray"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/lineOpenLocation"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CFCFCF"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvOpenLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="打开文件所在目录"
+        android:textColor="@color/dark_gray"
+        android:textSize="16dp"
+        android:visibility="invisible" />
+</LinearLayout>

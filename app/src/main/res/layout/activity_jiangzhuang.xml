@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ai.houzi.xiao.widget.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <ai.houzi.xiao.widget.ClearEditText
+                android:id="@+id/cetName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:hint="姓名"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="侯艳阳"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_7E"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg" />
+
+            <ai.houzi.xiao.widget.ClearEditText
+                android:id="@+id/cetReason"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:hint="鼓励语"
+                android:maxLines="3"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="鉴于你恬静淡雅，楚楚动人，冰清玉洁，气质如兰"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_7E"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg" />
+
+            <ai.houzi.xiao.widget.ClearEditText
+                android:id="@+id/cetTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:hint="称号"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="奥斯卡最佳女友"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_7E"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_bg" />
+
+            <ai.houzi.xiao.widget.ClearEditText
+                android:id="@+id/cetTeam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:hint="颁发奖励团队"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="最棒女友认证会"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_7E"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="发奖" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="我是一个粉刷匠，粉刷我的墙，哎吆我的小鼻子呀，变呀变喽样，刷了房顶有刷墙" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/view"
+            layout="@layout/layout_jiangzhuang"
+            android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>  

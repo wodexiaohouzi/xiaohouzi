@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qqalbum.imagepicker.customviews.MaterialLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/llLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/titleBarHeight"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/ibLeft"
+            android:layout_width="20dp"
+            android:layout_height="@dimen/titleBarHeight"
+            android:src="@mipmap/back_arrow" />
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titleBarHeight"
+            android:layout_toRightOf="@id/ibLeft"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titleLeftSize"
+            tools:text="返回" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/titleBarHeight"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titleTextSize"
+            tools:text="标题" />
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title2TextSize"
+            tools:text="副标题" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pbTitle"
+        android:layout_width="18dp"
+        android:layout_height="@dimen/titleBarHeight"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/llTitle"
+        android:src="@drawable/progress_bar" />
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/titleBarHeight"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleLeftSize" />
+
+    <CheckBox
+        android:id="@+id/cbRight"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/titleBarHeight"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:button="@drawable/selector_checkbox_preview"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleLeftSize" />
+</com.qqalbum.imagepicker.customviews.MaterialLayout>

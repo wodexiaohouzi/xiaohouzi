@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/jiangzhuang" />
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:weightSum="363">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="121" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="163"
+            android:orientation="horizontal"
+            android:weightSum="256">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="43" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="170">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ai.houzi.xiao.widget.ZhongQiTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="亲爱的 侯艳阳 小朋友"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dp"
+                        android:text="\t\t\t\t鉴于你恬静淡雅，楚楚动人，冰清玉洁，气质如兰。特此授予你"
+                        android:textColor="#555"
+                        android:textSize="10dp" />
+
+                    <ai.houzi.xiao.widget.ZhongQiTextView
+                        android:id="@+id/tvChengHao"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:text="奥斯卡最佳女友"
+                        android:textColor="#ED4396"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:id="@+id/tvTeam"
+                        android:layout_width="130dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="颁发单位：最棒女友认证会"
+                        android:textColor="#333"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="有  效  期：永久有效"
+                        android:textColor="#333"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ai.houzi.xiao.widget.StampView
+                    android:id="@+id/stampView"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="20dp"
+                    app:svColor="@color/cpb_red_dark"
+                    app:svExplain="荣誉专用章"
+                    app:svText="最棒女友认证会"
+                    app:svWidth="1dp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="43" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="79" />
+    </LinearLayout>
+</FrameLayout>

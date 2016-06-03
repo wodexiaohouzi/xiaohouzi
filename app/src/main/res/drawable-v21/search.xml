@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportHeight="160"
+    android:viewportWidth="160">
+    <path
+        android:name="search"
+        android:pathData="M81,82 A9,9 0 1,1 82,81 L89,87"
+        android:strokeAlpha="0.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="2" />
+</vector>

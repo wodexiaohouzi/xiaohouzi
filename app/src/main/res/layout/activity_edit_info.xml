@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_F7"
+    android:orientation="vertical">
+
+    <ai.houzi.xiao.widget.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" />
+
+    <ai.houzi.xiao.widget.MyScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp">
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llUserName"
+                style="@style/UserInfo_LL">
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="昵称"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    style="@style/UserInfo_ET"
+                    android:hint="用户名"
+                    android:singleLine="true" />
+
+
+                <ImageView
+                    style="@style/UserInfo_IV"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llSex"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="性别"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etSex"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:text="男" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llAge"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="年龄"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etAge"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:text="0岁" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llConstellation"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="星座"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etConstellation"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    tools:text="天秤座" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llJob"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="职业"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etJob"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:hint="选择职业，发现同行"
+                    android:singleLine="true" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llCompany"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="公司"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etCompany"
+                    style="@style/UserInfo_ET"
+                    android:hint="填写公司，发现同事"
+                    android:singleLine="true" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llSchool"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="学校"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etSchool"
+                    style="@style/UserInfo_ET"
+                    android:hint="填写学校，发现校友"
+                    android:singleLine="true" />
+
+
+                <ImageView
+                    style="@style/UserInfo_IV"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llSite"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="所在地"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etSite"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:hint="发现所在，一起回家"
+                    android:singleLine="true" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llHomeTown"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="故乡"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etHomeTown"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:hint="选择家乡，发现老乡"
+                    android:singleLine="true" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llMailBox"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="邮箱"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etMailBox"
+                    style="@style/UserInfo_ET"
+                    android:hint="你的邮箱"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+
+
+                <ImageView
+                    style="@style/UserInfo_IV"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llSignature"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:singleLine="true"
+                    android:text="个人说明"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/etSignature"
+                    style="@style/UserInfo_ET"
+                    android:enabled="false"
+                    android:hint="介绍一下自己吧" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <include layout="@layout/line_gray_half" />
+
+            <LinearLayout
+                android:id="@+id/llInterest"
+                style="@style/UserInfo_LL">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="兴趣爱好展示设置"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <ImageView style="@style/UserInfo_IV" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray_half" />
+
+        </LinearLayout>
+    </ai.houzi.xiao.widget.MyScrollView>
+</LinearLayout>

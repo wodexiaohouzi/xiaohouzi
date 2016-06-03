@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="refresh_listview_header_hint_normal">下拉刷新</string>
+    <string name="refresh_listview_header_hint_release">释放刷新</string>
+    <string name="refresh_listview_header_hint_loading">加载中&#8230;&#8230;</string>
+    <string name="refresh_listview_header_hint_success">加载成功</string>
+    <string name="refresh_listview_header_hint_fail">加载失败</string>
+    <string name="refresh_listview_header_last_time">上次更新：</string>
+</resources>

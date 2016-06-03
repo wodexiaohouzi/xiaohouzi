@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/loading_bg_shape"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="15dp"
+        android:contentDescription="@string/app_name"
+        android:layout_height="15dp"
+        android:src="@drawable/progress_bar" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="登录中"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</LinearLayout>

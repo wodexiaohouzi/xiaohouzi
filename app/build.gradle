@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        小侯子 {
+            keyAlias 'xiaohouzi'
+            keyPassword 'xiaohouzi123'
+            storeFile file('D:/jfccAndroid/xiaohouzi/app/xiaohouzi.jks')
+            storePassword 'xiaohouzi123'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "ai.houzi.xiao"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.小侯子
+        }
+        debug {
+            signingConfig signingConfigs.小侯子
+        }
+    }
+    productFlavors {
+        qihu360 {}
+        baidu {}
+        xiaomi {}
+        huawei {}
+        wandoujia {}
+        yingyongbao {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:palette-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'com.google.zxing:core:3.2.1'
+    compile project(':imagepicker_of_qqalbum')
+    compile project(':common')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+}

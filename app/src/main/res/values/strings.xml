@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">小侯子</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">请输入手机号码</string>
+    <string name="prompt_password">请输入登录密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="error_invalid_phone">手机格式不正确</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required_phone">手机号码不能为空</string>
+    <string name="error_field_required_password">密码不能为空</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="scan_text1">将取景框对准二维码</string>
+    <string name="scan_text2">即可自动扫描。</string>
+    <string name="autograph">风可以吹起一大张白纸，却吹不走一只蝴蝶，因为生命的力量在于不顺从。</string>
+    <string name="share_content">加我QQ：907277759</string>
+    <string name="user_content">{user:{userId:\"u000001\",userName:\"小侯子\",userAutograph:\"风可以吹起一大张白纸，却吹不走一只蝴蝶，因为生命的力量在于不顺从。\",userHeadUrl:\"http://ww2.sinaimg.cn/crop.0.0.960.960.1024/a51d9d68jw8eslm56cbyvj20qo0qon09.jpg\",userPhone:"13122897973",userLv:90,userQRcode:\"\",city:\"西安\",temperatrue:\"15\"}}</string>
+
+
+    <string name="Upload">Upload</string>
+    <string name="Error">Error</string>
+    <string name="Complete">Complete</string>
+
+</resources>

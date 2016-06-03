@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MaterialLayout">
+        <attr name="mlAlpha" format="integer" />
+        <attr name="mlAlpha_step" format="integer" />
+        <attr name="mlFramerate" format="integer" />
+        <attr name="mlDuration" format="integer" />
+        <attr name="mlColor" format="color" />
+        <attr name="mlScale" format="float" />
+    </declare-styleable>
+</resources>

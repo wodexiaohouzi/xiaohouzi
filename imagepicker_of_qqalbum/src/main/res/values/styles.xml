@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 顶部标题栏标题文本样式 -->
+    <style name="topbarTittleTheme">
+        <item name="android:textColor">@color/topbar_btn_text_color</item>
+        <!--
+        <item name="android:shadowColor">@color/gray</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1</item>
+        -->
+    </style>
+
+
+    <style name="AnimActivityTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/ActivityTranslateAnim</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActivityTranslateAnim" parent="@android:style/Animation.Activity">
+        <!--a2进入-->
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_bottom</item>
+        <!--a1消失-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/out_from_top</item>-->
+        <!--a2消失-->
+        <item name="android:activityCloseEnterAnimation">@anim/out_from_bottom</item>
+        <!--a1进入-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/in_from_top</item>-->
+    </style>
+
+
+    <!--dialog样式-->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_enter</item>
+        <item name="android:windowExitAnimation">@anim/translate_outer</item>
+    </style>
+    <!-- 自定义alertdialog -->
+    <style name="Dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

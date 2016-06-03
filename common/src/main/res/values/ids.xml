@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="keyboard_view" type="id" />
+    <item name="rl_keyboard" type="id" />
+    <item name="rgChangeKeyboard" type="id" />
+    <item name="tvSystemKeyboard" type="id" />
+    <item name="rb_digit" type="id" />
+    <item name="rb_letter" type="id" />
+    <item name="rb_symbol" type="id" />
+</resources>
